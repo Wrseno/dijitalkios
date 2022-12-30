@@ -1,0 +1,147 @@
+[
+  {
+    "id": "1",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 250.000",
+    "update": "25 Des, 2022",
+    "description": "Web Topup Z Games ini adalah Platform penyedia produk digital PPOB, Voucher dan Games, cocok untuk bisnis toko online produk digital, belajar, maupun untuk dikembangkan kembali. Web ini dikembangkan menggunakan HTML, CSS dan Javascript. Tentu sangat cocok untuk kamu yang baru memulai bisnis Top Up Games dan belajar mengembangkan sebuah web.",
+    "feature": [
+      "Optimasi SEO",
+      "Custom warna, font, dll.",
+      "Custom metode pembayaran, harga.",
+      "Termasuk Hosting",
+      "Termasuk Domain (.my.id)",
+      "Dibantu Proses Install",
+      "Top Up diarahkan ke WhatsApp",
+      "Terima Jadi"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Web TopUp Games",
+        "server": "-",
+        "tech": "HTML, CSS, Javascript",
+        "database": "-",
+        "release": "25 Des, 2022",
+        "update": "25 Des, 2022"
+      }
+    ],
+    "slug": "z-games",
+    "preview": "https://www.frozth.com"
+  },
+  {
+    "id": "2",
+    "images": "bo-home-v3.jpg",
+    "title": "Script Home V3 - Buka Olshop",
+    "category": "Home Buka Olshop",
+    "price": "Rp 30.000",
+    "update": "30 Des, 2022",
+    "description": "Script Home Versi 3 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. ",
+    "feature": [
+      "Full Source",
+      "Custom warna, font, dll.",
+      "Free Icon & Gambar Bawaan",
+      "Cek Provider Nomor HP",
+      "Popup Produk Pulsa",
+      "Otomatis Diarahkan ke Produk"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Home Buka Olshop",
+        "server": "-",
+        "tech": "HTML, CSS, Javascript",
+        "database": "-",
+        "release": "30 Des, 2022",
+        "update": "30 Des, 2022"
+      }
+    ],
+    "slug": "home-bukaolshop-v3",
+    "preview": "#"
+  },
+  {
+    "id": "3",
+    "images": "price-games.jpg",
+    "title": "Halaman Games - Buka Olshop",
+    "category": "Page Buka Olshop",
+    "price": "Rp 50.000",
+    "update": "25 Des, 2022",
+    "description": "Script halaman harga games Versi 1 atau page pricelist untuk aplikasi Buka Olshop, dengan tampilan yang menarik. Harga Rp 50.000 akan mendapatkan lebih dari 5 script dari berbagai games, Mobile Legends, Free Fire, Apex Mobile, Valorant, dll. Jika ingin membeli 1 script saja harga Rp 10.000. Untuk pembelian per-script silahkan konfirmasi di WhatsApp.",
+    "feature": [
+      "Full Source",
+      "Lebih dari 5 Source",
+      "Custom warna, font, dll.",
+      "Free Icon & Gambar Bawaan",
+      "Otomatis Diarahkan ke Produk"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Page Buka Olshop",
+        "server": "-",
+        "tech": "HTML, CSS, Javascript",
+        "database": "-",
+        "release": "30 Des, 2022",
+        "update": "30 Des, 2022"
+      }
+    ],
+    "slug": "page-bukaolshop-games-v1",
+    "preview": "#"
+  },
+  {
+    "id": "4",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  },
+  {
+    "id": "5",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  },
+  {
+    "id": "6",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  },
+  {
+    "id": "7",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  },
+  {
+    "id": "8",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  },
+  {
+    "id": "9",
+    "images": "z-games.jpg",
+    "title": "Web TopUp Games - Z Games",
+    "category": "Web TopUp Games",
+    "price": "Rp 200.000",
+    "update": "25 Des, 2022",
+    "slug": "games"
+  }
+]

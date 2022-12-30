@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pay_1",
+    "name": "DANA",
+    "images": "dana.jpg",
+    "value": "DANA : 081316284051"
+  },
+  {
+    "id": "pay_2",
+    "name": "GOPAY",
+    "images": "gopay.jpg",
+    "value": "GOPAY : 082132873886"
+  },
+  {
+    "id": "pay_3",
+    "name": "ShopeePay",
+    "images": "shopee.jpg",
+    "value": "ShopeePay : 082132873886"
+  },
+  {
+    "id": "pay_4",
+    "name": "Link Aja",
+    "images": "link-aja.jpg",
+    "value": "Link Aja : XXXX"
+  },
+  {
+    "id": "pay_5",
+    "name": "BRI",
+    "images": "bri.jpg",
+    "value": "BRI : XXXXXX"
+  },
+  {
+    "id": "pay_6",
+    "name": "BCA",
+    "images": "bca.jpg",
+    "value": "BCA : XXXX"
+  }
+]
