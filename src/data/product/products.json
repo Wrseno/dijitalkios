@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "images": "z-games.jpg",
+    "images": "z-games.webp",
     "title": "Web TopUp Games - Z Games",
     "category": "Web TopUp Games",
     "price": "Rp 250.000",
@@ -33,7 +33,7 @@
   },
   {
     "id": "2",
-    "images": "bo-home-v3.jpg",
+    "images": "bo-home-v3.webp",
     "title": "Script Home V3 - Buka Olshop",
     "category": "Home Buka Olshop",
     "price": "Rp 30.000",
@@ -63,7 +63,7 @@
   },
   {
     "id": "3",
-    "images": "price-games.jpg",
+    "images": "price-games.webp",
     "title": "Halaman Games - Buka Olshop",
     "category": "Page Buka Olshop",
     "price": "Rp 50.000",

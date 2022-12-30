@@ -47,12 +47,12 @@ const DescriptionCard = () => {
       <div className='md:w-1/2 my-auto'>
         <Image
           unoptimized
-          src='/images/digitalkios-header.png'
+          src='/images/digitalkios-header.webp'
           alt='Digitalkios Header'
           width={1000}
           height={1000}
           placeholder='blur'
-          blurDataURL='/images/digitalkios-header.png'
+          blurDataURL='/images/digitalkios-header.webp'
         />
       </div>
     </section>
