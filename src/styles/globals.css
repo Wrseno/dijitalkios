@@ -67,3 +67,9 @@ input[type=radio]:checked~span::before {
   background: linear-gradient(90deg, rgba(58, 167, 180, 1) 29%, rgba(29, 38, 253, 1) 76%);
   border-radius: 5px;
 }
+
+@media screen and (max-width:600px) {
+  a {
+    cursor: none;
+  }
+}
