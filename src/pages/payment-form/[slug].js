@@ -23,7 +23,10 @@ const FormPayment = ({ payments, product }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = "https://wa.wizard.id/bfa341";
+    const productName = product.title;
+    const price = product.price;
+
+    const url = `https://api.whatsapp.com/send?phone=6282132873886&text=Halo Admin, Saya Ingin Konfirmasi Pembayaran.%0A${productName} Sebesar ${price}.%0ADengan Metode Pembayaran ${selectedOption}.%0A%0A*Order melalui website dijitalkios.*`;
     window.open(url);
   };
 
