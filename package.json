@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^0.1.6",
     "moment": "^2.29.4",
     "next": "13.0.7",
     "next-routes-extended": "^1.7.0",

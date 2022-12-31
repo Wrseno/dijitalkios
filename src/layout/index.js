@@ -1,8 +1,29 @@
 import Head from "next/head";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Script from "next/script";
 
 const Layout = ({ children }) => {
+  const GoogleAnalytics = () => {
+    return (
+      <>
+        <Script
+          async
+          src='https://www.googletagmanager.com/gtag/js?id=G-2WR2R8CTYD'
+          strategy='afterInteractive'
+        />
+        <Script id='google-analytics' strategy='afterInteractive'>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'G-2WR2R8CTYD');
+          `}
+        </Script>
+      </>
+    );
+  };
   return (
     <>
       <Head>
@@ -41,6 +62,7 @@ const Layout = ({ children }) => {
         <meta name='og:url' content='' />
         <meta name='og:site_name' content='dijitalkios' />
         <link rel='icon' href='/images/dijitalkios-icon.png' />
+        <GoogleAnalytics />
       </Head>
       <Header />
       <div>{children}</div>
