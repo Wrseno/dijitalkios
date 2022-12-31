@@ -33,32 +33,34 @@
   },
   {
     "id": "2",
-    "images": "bo-home-v3.webp",
-    "title": "Script Home V3 - Buka Olshop",
+    "images": "bo-home-v1.webp",
+    "title": "Script Home V1 - Buka Olshop",
     "category": "Home Buka Olshop",
-    "price": "Rp 30.000",
+    "price": "Rp 75.000",
     "update": "30 Des, 2022",
-    "description": "Script Home Versi 3 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. ",
+    "description": "Script Home Versi 1 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. Dengan gradasi warna yang menarik. Dibuat menggunakan Framewrok Tailwind CSS membuat kode semakin sedikit dan singkat.",
     "feature": [
       "Full Source",
       "Custom warna, font, dll.",
       "Free Icon & Gambar Bawaan",
-      "Cek Provider Nomor HP",
-      "Popup Produk Pulsa",
-      "Otomatis Diarahkan ke Produk"
+      "Popup Saldo",
+      "Otomatis Diarahkan ke Produk",
+      "Image Slider",
+      "Produk Slider",
+      "Promo Slider"
     ],
     "details": [
       {
         "author": "Dijitalkios",
         "category": "Home Buka Olshop",
         "server": "-",
-        "tech": "HTML, CSS, Javascript",
+        "tech": "HTML, Tailwind CSS, Javascript",
         "database": "-",
-        "release": "30 Des, 2022",
-        "update": "30 Des, 2022"
+        "release": "31 Des, 2022",
+        "update": "31 Des, 2022"
       }
     ],
-    "slug": "home-bukaolshop-v3",
+    "slug": "home-bukaolshop-v1",
     "preview": "#"
   },
   {
@@ -87,61 +89,37 @@
         "update": "30 Des, 2022"
       }
     ],
-    "slug": "page-bukaolshop-games-v1",
+    "slug": "page-games-v1",
     "preview": "#"
   },
   {
     "id": "4",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
-  },
-  {
-    "id": "5",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
-  },
-  {
-    "id": "6",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
-  },
-  {
-    "id": "7",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
-  },
-  {
-    "id": "8",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
-  },
-  {
-    "id": "9",
-    "images": "z-games.webp",
-    "title": "Web TopUp Games - Z Games",
-    "category": "Web TopUp Games",
-    "price": "Rp 200.000",
-    "update": "25 Des, 2022",
-    "slug": "games"
+    "images": "bo-home-v3.webp",
+    "title": "Script Home V3 - Buka Olshop",
+    "category": "Home Buka Olshop",
+    "price": "Rp 30.000",
+    "update": "30 Des, 2022",
+    "description": "Script Home Versi 3 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. ",
+    "feature": [
+      "Full Source",
+      "Custom warna, font, dll.",
+      "Free Icon & Gambar Bawaan",
+      "Cek Provider Nomor HP",
+      "Popup Produk Pulsa",
+      "Otomatis Diarahkan ke Produk"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Home Buka Olshop",
+        "server": "-",
+        "tech": "HTML, CSS, Javascript",
+        "database": "-",
+        "release": "30 Des, 2022",
+        "update": "30 Des, 2022"
+      }
+    ],
+    "slug": "home-bukaolshop-v3",
+    "preview": "#"
   }
 ]
