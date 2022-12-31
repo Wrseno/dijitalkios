@@ -1,22 +1,22 @@
-import '../styles/globals.css'
-import { useState, useEffect } from 'react'
+import "../styles/globals.css";
+import { useState, useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
-  const [showing, setShowing] = useState(false)
+  const [showing, setShowing] = useState(false);
 
   useEffect(() => {
-    setShowing(true)
-  }, [])
+    setShowing(true);
+  }, []);
 
   if (!showing) {
-    return null
+    return null;
   }
 
-  if (typeof window === 'undefined') {
-    return <></>
+  if (typeof window === "undefined") {
+    return <></>;
   } else {
-    return <Component {...pageProps} />
+    return <Component {...pageProps} />;
   }
 }
 
-export default MyApp
+export default MyApp;
