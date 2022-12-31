@@ -38,7 +38,7 @@
     "category": "Home Buka Olshop",
     "price": "Rp 75.000",
     "update": "30 Des, 2022",
-    "description": "Script Home Versi 1 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. Dengan gradasi warna yang menarik. Dibuat menggunakan Framewrok Tailwind CSS membuat kode semakin sedikit dan singkat.",
+    "description": "Script Home Versi 1 untuk aplikasi Buka Olshop, dengan tampilan yang fresh dan gradasi warna yang menarik. Dibuat menggunakan Framework Tailwind CSS membuat kode semakin singkat.",
     "feature": [
       "Full Source",
       "Custom warna, font, dll.",
@@ -94,6 +94,36 @@
   },
   {
     "id": "4",
+    "images": "bo-home-v2.webp",
+    "title": "Script Home V2 - Buka Olshop",
+    "category": "Home Buka Olshop",
+    "price": "Rp 50.000",
+    "update": "30 Des, 2022",
+    "description": "Script Home Versi 2 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. Dibuat menggunakan Framework Tailwind CSS membuat kode menjadi singkat.",
+    "feature": [
+      "Full Source",
+      "Custom warna, font, dll.",
+      "Free Icon & Gambar Bawaan",
+      "Popup Profil",
+      "Popup Produk (Pulsa, Internet, Game, E Wallet, dll)",
+      "Otomatis Diarahkan ke Produk"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Home Buka Olshop",
+        "server": "-",
+        "tech": "HTML, Tailwind CSS, Javascript",
+        "database": "-",
+        "release": "31 Des, 2022",
+        "update": "1 Jan, 2022"
+      }
+    ],
+    "slug": "home-bukaolshop-v2",
+    "preview": "#"
+  },
+  {
+    "id": "5",
     "images": "bo-home-v3.webp",
     "title": "Script Home V3 - Buka Olshop",
     "category": "Home Buka Olshop",
