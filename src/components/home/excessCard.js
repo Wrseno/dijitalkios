@@ -16,7 +16,7 @@ const ExcessCard = () => {
           Berbagai Alasan digitalkios Untuk Anda Pilih.
         </p>
         <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 my-14'>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:hover:cursor-pointer hover:-translate-y-2'>
             <RiCustomerService2Fill
               size={70}
               color={"#f0f9ff"}
@@ -28,7 +28,7 @@ const ExcessCard = () => {
               melalui email maupun chat.
             </p>
           </div>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:hover:cursor-pointer hover:-translate-y-2'>
             <IoPricetags
               size={70}
               color={"#f0f9ff"}
@@ -40,7 +40,7 @@ const ExcessCard = () => {
               terjangkau mulai dari harga Rp 5.000 an saja.
             </p>
           </div>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:lg:hover:cursor-pointer hover:-translate-y-2'>
             <FaClipboardList
               size={70}
               color={"#f0f9ff"}
@@ -52,7 +52,7 @@ const ExcessCard = () => {
               seperti jasa website, desain grafis, desain bukaolshop, dll.
             </p>
           </div>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:hover:cursor-pointer hover:-translate-y-2'>
             <VscWorkspaceTrusted
               size={70}
               color={"#f0f9ff"}
@@ -64,7 +64,7 @@ const ExcessCard = () => {
               membuat bisnis mereka lebih berkembang.
             </p>
           </div>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:hover:cursor-pointer hover:-translate-y-2'>
             <TiWarning
               size={70}
               color={"#f0f9ff"}
@@ -76,7 +76,7 @@ const ExcessCard = () => {
               perbaiki secara GRATIS.
             </p>
           </div>
-          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  hover:cursor-pointer hover:-translate-y-2'>
+          <div className='w-full duration-300 p-4 rounded-md shadow-xl hover:bg-white  lg:hover:cursor-pointer hover:-translate-y-2'>
             <RxUpdate
               size={70}
               color={"#f0f9ff"}

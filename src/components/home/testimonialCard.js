@@ -5,7 +5,7 @@ const TestimonialCard = ({ testi }) => {
   return (
     <li
       className='bg-gradient-to-t from-sky-500 to-sky-300 p-4 rounded-md 
-        hover:bg-gradient-to-r hover:from-sky-500 hover:to-sky-300 hover:cursor-pointer'
+        hover:bg-gradient-to-r hover:from-sky-500 hover:to-sky-300 lg:hover:cursor-pointer'
     >
       <div className='flex justify-between'>
         <div className='flex gap-4'>
