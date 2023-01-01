@@ -50,7 +50,7 @@ const ProductBySlug = ({ product }) => {
             {MetaSEO()}
           </Head>
 
-          <main className='w-full my-32 md:px-16 px-4'>
+          <main className='w-full my-24 md:px-16 px-4'>
             <ProductHeader key={product.id} product={product} />
             <ProductDetails key={product.slug} product={product} />
             <section>

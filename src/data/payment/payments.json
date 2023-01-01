@@ -6,33 +6,33 @@
     "value": "DANA : 081316284051"
   },
   {
-    "id": "pay_2",
-    "name": "GOPAY",
-    "images": "gopay.webp",
-    "value": "GOPAY : 082132873886"
-  },
-  {
-    "id": "pay_3",
+    "id": "pay_4",
     "name": "ShopeePay",
     "images": "shopee.webp",
     "value": "ShopeePay : 082132873886"
   },
   {
+    "id": "pay_3",
+    "name": "GOPAY",
+    "images": "gopay.webp",
+    "value": "GOPAY : Belum Bisa"
+  },
+  {
     "id": "pay_4",
     "name": "Link Aja",
     "images": "link-aja.webp",
-    "value": "Link Aja : XXXX"
+    "value": "Link Aja : Belum Bisa"
   },
   {
     "id": "pay_5",
     "name": "BRI",
     "images": "bri.webp",
-    "value": "BRI : XXXXXX"
+    "value": "BRI : Belum Bisa"
   },
   {
     "id": "pay_6",
     "name": "BCA",
     "images": "bca.webp",
-    "value": "BCA : XXXX"
+    "value": "BCA : Belum Bisa"
   }
 ]

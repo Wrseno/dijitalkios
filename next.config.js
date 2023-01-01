@@ -5,6 +5,7 @@ const nextConfig = {
   images: {
     loader: "akamai",
     path: " ",
+    domains: ["icons8.com"],
   },
   assetPrefix: "/",
 };
