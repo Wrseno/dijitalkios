@@ -35,7 +35,7 @@ const Home = ({ products, testimonials }) => {
                 </p>
               </div>
               <div className='w-full'>
-                <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-14'>
+                <ul className='grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4 my-14'>
                   {products.slice(0, 6).map((product, index) => (
                     <ImageCard key={index} product={product} />
                   ))}
