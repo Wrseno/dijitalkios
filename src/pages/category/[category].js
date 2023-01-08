@@ -1,33 +1,34 @@
-import Layout from "../../../layout";
-import ImageCard from "../../../components/product/imageCard";
-import Link from "next/link";
-import productJSON from "../../../data/product/products.json";
-import { GrFormNext, GrNext, GrPrevious } from "react-icons/gr";
+import productJSON from "../../data/product/products.json";
+import Layout from "../../layout";
+import ImageCard from "../../components/product/imageCard";
 import Head from "next/head";
+import LoadPage from "../../components/loading/loadPage";
 import { useState, useEffect } from "react";
-import LoadPage from "../../../components/loading/loadPage";
+import Link from "next/link";
+import { GrFormNext } from "react-icons/gr";
 
-const AllProduct = ({ products, page }) => {
-  const totalPages = Math.ceil(products.length / 6);
-  const productsSEO = products.map((productSEO) => {
-    return productSEO;
-  });
+const ProductBySlug = ({ product }) => {
+  const relatedProducts = productJSON.filter(
+    (p) => p.category === product.category
+  );
+
+  const productsSEO = product;
 
   const MetaSEO = () => {
     return (
       <>
-        <meta name='description' content={productsSEO[0].description} />
+        <meta name='description' content={productsSEO.description} />
         <meta
           name='keywords'
-          content={`${productsSEO[0].category}, ${productsSEO[1].category}, Jasa Pembuatan Website, HTML bukaolshop Gratis, Jual Script bukaolshop, jual html bo`}
+          content={`${productsSEO.category}, ${productsSEO.category}, Jasa Pembuatan Website, HTML bukaolshop Gratis, Jual Script bukaolshop, jual html bo`}
         />
-        <meta property='og:description' content={productsSEO[0].description} />
-        <meta name='twitter:title' content={productsSEO[0].title} />
+        <meta property='og:description' content={productsSEO.description} />
+        <meta name='twitter:title' content={productsSEO.title} />
         <meta name='twitter:image' content='https://ibb.co/LQ9vpVh' />
         <meta name='twitter:image:alt' content='Script Web Topup Games'></meta>
-        <meta name='twitter:description' content={productsSEO[0].description} />
-        <meta name='og:title' content={productsSEO[0].title} />
-        <meta property='og:description' content={productsSEO[0].description} />
+        <meta name='twitter:description' content={productsSEO.description} />
+        <meta name='og:title' content={productsSEO.title} />
+        <meta property='og:description' content={productsSEO.description} />
       </>
     );
   };
@@ -45,7 +46,7 @@ const AllProduct = ({ products, page }) => {
       ) : (
         <Layout>
           <Head>
-            <title>Semua Produk | Dijital Kios</title>
+            <title>Produk {product.category} || Dijital Kios</title>
             {MetaSEO()}
           </Head>
 
@@ -64,19 +65,35 @@ const AllProduct = ({ products, page }) => {
               >
                 Products
               </Link>
+              <GrFormNext />
+              <Link
+                href='/category'
+                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+              >
+                Category
+              </Link>
+              <GrFormNext />
+              <Link
+                href='/category'
+                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+              >
+                {product.category}
+              </Link>
             </div>
             <section className='container max-w-screen-xl mx-auto'>
               <div>
-                <h1 className='text-2xl font-bold'>Semua Produk</h1>
+                <h1 className='text-lg lg:text-2xl font-bold'>
+                  Produk {product.category}
+                </h1>
               </div>
               <div className='w-full'>
                 <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
-                  {products.slice((page - 1) * 6, page * 6).map((product) => (
-                    <ImageCard key={product.id} product={product} />
+                  {relatedProducts.slice(0, 3).map((rp, index) => (
+                    <ImageCard key={index} product={rp} />
                   ))}
                 </ul>
                 <div className='flex gap-6 w-full justify-center pt-4'>
-                  <div class='flex flex-col items-center'>
+                  {/* <div class='flex flex-col items-center'>
                     <span class='text-sm md:text-base text-gray-700'>
                       Menampilkan{" "}
                       <span class='font-semibold text-blue-700'>{page} </span>
@@ -132,7 +149,7 @@ const AllProduct = ({ products, page }) => {
                         </Link>
                       )}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </section>
@@ -143,31 +160,30 @@ const AllProduct = ({ products, page }) => {
   );
 };
 
-export default AllProduct;
+export default ProductBySlug;
+
+function findProductByCategory(products, category) {
+  return products.find((product) => product.category === category);
+}
 
 export async function getStaticProps({ params }) {
-  const page = params.page ? parseInt(params.page) : 1;
   const products = productJSON;
+  const product = findProductByCategory(products, params.category);
 
   return {
     props: {
-      products,
-      page,
+      product,
     },
   };
 }
 
 export async function getStaticPaths() {
   const products = productJSON;
-  const totalPages = Math.ceil(products.length / 6);
-
-  const paths = [];
-  for (let i = 1; i <= totalPages; i++) {
-    paths.push({ params: { page: `${i}` } });
-  }
 
   return {
-    paths,
+    paths: products.map((product) => ({
+      params: { category: product.category },
+    })),
     fallback: false,
   };
 }

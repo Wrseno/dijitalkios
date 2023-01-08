@@ -46,7 +46,6 @@ const DescriptionCard = () => {
 
       <div className='md:w-1/2 my-auto'>
         <Image
-          unoptimized
           src='/images/digitalkios-header.webp'
           alt='Digitalkios Header'
           width={1000}

@@ -14,7 +14,7 @@ const ImageCard = ({ product }) => {
           height={1000}
           placeholder='blur'
           blurDataURL={`/images${product.images}`}
-          className='scale-110 lg:scale-100 rounded-md'
+          className='scale-100 rounded-md'
         />
         <h1 className='lg:text-xl font-bold pt-2'>{product.title}</h1>
         <div className='flex py-2'>

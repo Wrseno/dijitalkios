@@ -6,6 +6,7 @@ const nextConfig = {
     loader: "akamai",
     path: " ",
     domains: ["icons8.com"],
+    unoptimized: true,
   },
   assetPrefix: "/",
 };
