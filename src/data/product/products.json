@@ -6,7 +6,7 @@
     "category": "Web TopUp Games",
     "price": "Rp 250.000",
     "update": "25 Des, 2022",
-    "description": "Web Topup Z Games ini adalah Platform penyedia produk digital PPOB, Voucher dan Games, cocok untuk bisnis toko online produk digital, belajar, maupun untuk dikembangkan kembali. Web ini dikembangkan menggunakan HTML, CSS dan Javascript. Tentu sangat cocok untuk kamu yang baru memulai bisnis Top Up Games dan belajar mengembangkan sebuah web.",
+    "description": "Web Topup Z Games ini adalah Platform penyedia produk digital PPOB, Voucher dan Games. Website ini memiliki keunggulan yaitu ketika pembeli mengisi formulir top up, maka akan otomatis diarahkan ke WhatsApp dengan keterangan Id Games, Nominal Top Up, dan Metode Pembayaran.",
     "feature": [
       "Optimasi SEO",
       "Custom warna, font, dll.",
@@ -14,8 +14,8 @@
       "Termasuk Hosting",
       "Termasuk Domain (.my.id)",
       "Dibantu Proses Install",
-      "Top Up diarahkan ke WhatsApp",
-      "Terima Jadi"
+      "Terintegrasi API WhatsApp",
+      "Keterangan Id Game, Nominal Top Up, dan Metode Pembayaran"
     ],
     "details": [
       {
@@ -33,10 +33,38 @@
   },
   {
     "id": "2",
+    "images": "y-games.jpg",
+    "title": "Web TopUp Games - YGames",
+    "category": "Web TopUp Games",
+    "price": "Rp 50.000",
+    "update": "8 Jan, 2022",
+    "description": "Web Topup YGames ini adalah Platform penyedia produk digital PPOB, Voucher dan Games.",
+    "feature": [
+      "Full Source",
+      "Custom warna, font, dll.",
+      "Popup Harga Produk",
+      "Top Up diarahkan ke WhatsApp"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Web TopUp Games",
+        "server": "-",
+        "tech": "HTML, CSS, Javascript",
+        "database": "-",
+        "release": "30 Mei, 2022",
+        "update": "8 Jan, 2022"
+      }
+    ],
+    "slug": "y-games",
+    "preview": "#"
+  },
+  {
+    "id": "3",
     "images": "bo-home-v1.webp",
     "title": "Script Home V1 - Buka Olshop",
     "category": "Home Buka Olshop",
-    "price": "Rp 75.000",
+    "price": "Rp 50.000",
     "update": "30 Des, 2022",
     "description": "Script Home Versi 1 untuk aplikasi Buka Olshop, dengan tampilan yang fresh dan gradasi warna yang menarik. Dibuat menggunakan Framework Tailwind CSS membuat kode semakin singkat.",
     "feature": [
@@ -64,13 +92,13 @@
     "preview": "#"
   },
   {
-    "id": "3",
+    "id": "4",
     "images": "price-games.webp",
     "title": "Halaman Games - Buka Olshop",
     "category": "Page Buka Olshop",
-    "price": "Rp 50.000",
+    "price": "Rp 30.000",
     "update": "25 Des, 2022",
-    "description": "Script halaman harga games Versi 1 atau page pricelist untuk aplikasi Buka Olshop, dengan tampilan yang menarik. Harga Rp 50.000 akan mendapatkan lebih dari 5 script dari berbagai games, Mobile Legends, Free Fire, Apex Mobile, Valorant, dll. Jika ingin membeli 1 script saja harga Rp 10.000. Untuk pembelian per-script silahkan konfirmasi di WhatsApp.",
+    "description": "Script halaman harga games Versi 1 atau page pricelist untuk aplikasi Buka Olshop, dengan tampilan yang menarik. Harga Rp 30.000 akan mendapatkan lebih dari 5 script dari berbagai games, Mobile Legends, Free Fire, Apex Mobile, Valorant, dll. Jika ingin membeli 1 script saja harga Rp 5.000. Untuk pembelian per-script silahkan konfirmasi di WhatsApp.",
     "feature": [
       "Full Source",
       "Lebih dari 5 Source",
@@ -93,7 +121,7 @@
     "preview": "#"
   },
   {
-    "id": "4",
+    "id": "5",
     "images": "bo-home-v2.webp",
     "title": "Script Home V2 - Buka Olshop",
     "category": "Home Buka Olshop",
@@ -123,11 +151,11 @@
     "preview": "#"
   },
   {
-    "id": "5",
+    "id": "6",
     "images": "bo-home-v3.webp",
     "title": "Script Home V3 - Buka Olshop",
     "category": "Home Buka Olshop",
-    "price": "Rp 30.000",
+    "price": "Rp 25.000",
     "update": "30 Des, 2022",
     "description": "Script Home Versi 3 untuk aplikasi Buka Olshop, dengan tampilan yang fresh. ",
     "feature": [
