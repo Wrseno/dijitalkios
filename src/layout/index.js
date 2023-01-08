@@ -27,7 +27,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Dijital Kios</title>
+        <title>
+          Dijital Kios - Website Penyedia Layanan, Jasa, dan Produk Digital
+        </title>
         <meta name='author' content='DijitalKios' />
         <meta
           name='keywords'

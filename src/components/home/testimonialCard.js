@@ -20,7 +20,7 @@ const TestimonialCard = ({ testi }) => {
             blurDataURL={`/images/${testi.images}`}
           />
           <div>
-            <h1 className='font-bold text-xl'>{testi.name}</h1>
+            <h2 className='font-bold text-xl'>{testi.name}</h2>
             <p className='text-sm text-slate-700'>{testi.proffesion}</p>
           </div>
         </div>

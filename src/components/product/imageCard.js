@@ -16,7 +16,7 @@ const ImageCard = ({ product }) => {
           blurDataURL={`/images${product.images}`}
           className='scale-100 rounded-md'
         />
-        <h1 className='lg:text-xl font-bold pt-2'>{product.title}</h1>
+        <h2 className='lg:text-xl font-bold pt-2'>{product.title}</h2>
         <div className='flex py-2'>
           <AiFillStar color={"#eab308"} size={15} />
           <AiFillStar color={"#eab308"} size={15} />

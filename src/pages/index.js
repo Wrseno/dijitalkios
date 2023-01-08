@@ -27,9 +27,9 @@ const Home = ({ products, testimonials }) => {
 
             <section className='container max-w-screen-xl mx-auto my-24'>
               <div className='text-center text-slate-800'>
-                <h1 className='font-bold text-xl md:text-3xl'>
+                <h2 className='font-bold text-xl md:text-3xl'>
                   Beberapa Produk Kami
-                </h1>
+                </h2>
                 <p className='font-medium text-sm'>
                   Untuk Meningkatkan Peluang Bisnismu.
                 </p>
@@ -57,9 +57,9 @@ const Home = ({ products, testimonials }) => {
               <div className='text-slate-800'>
                 <div className='grid'>
                   <div className='text-center mb-14'>
-                    <h1 className=' text-xl md:text-3xl font-bold'>
+                    <h2 className=' text-xl md:text-3xl font-bold'>
                       Beberapa Ulasan Pelanggan
-                    </h1>
+                    </h2>
                     <p className='font-medium text-sm'>
                       Ulasan Pelanggan yang Telah Mempercayai Kami.
                     </p>
