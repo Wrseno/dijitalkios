@@ -1,33 +1,22 @@
 import paymentJSON from "../../data/payment/payments.json";
 import productsJSON from "../../data/product/products.json";
-import LoadPage from "../../components/loading/loadPage";
 import Layout from "../../layout";
 import PaymentCard from "../../components/payment/paymentCard";
-import { useState, useEffect } from "react";
 
 const FormPayment = ({ payments, product }) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
   return (
     <>
-      {loading ? (
-        <LoadPage />
-      ) : (
-        <>
-          <Layout>
-            <main className='w-full lg:px-64 my-24 md:px-32 p-4 bg-slate-100'>
-              <PaymentCard
-                payments={payments}
-                product={product}
-                key={product.id}
-              />
-            </main>
-          </Layout>
-        </>
-      )}
+      <>
+        <Layout>
+          <main className='w-full lg:px-64 my-24 md:px-32 p-4 bg-slate-100'>
+            <PaymentCard
+              payments={payments}
+              product={product}
+              key={product.id}
+            />
+          </main>
+        </Layout>
+      </>
     </>
   );
 };

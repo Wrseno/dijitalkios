@@ -2,8 +2,6 @@ import productJSON from "../../data/product/products.json";
 import Layout from "../../layout";
 import ImageCard from "../../components/product/imageCard";
 import Head from "next/head";
-import LoadPage from "../../components/loading/loadPage";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import { GrFormNext } from "react-icons/gr";
 
@@ -33,67 +31,58 @@ const ProductBySlug = ({ product }) => {
     );
   };
 
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 1000);
-  }, []);
-
   return (
     <>
-      {loading ? (
-        <LoadPage />
-      ) : (
-        <Layout>
-          <Head>
-            <title>Produk {product.category} || Dijital Kios</title>
-            {MetaSEO()}
-          </Head>
+      <Layout>
+        <Head>
+          <title>Produk {product.category} || Dijital Kios</title>
+          {MetaSEO()}
+        </Head>
 
-          <main className='w-full my-24 md:px-16 px-4'>
-            <div className='flex items-center mb-4'>
-              <Link
-                href='/'
-                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
-              >
-                Home
-              </Link>
-              <GrFormNext />
-              <Link
-                href='/products/page/1'
-                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
-              >
-                Products
-              </Link>
-              <GrFormNext />
-              <Link
-                href='/category'
-                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
-              >
-                Category
-              </Link>
-              <GrFormNext />
-              <Link
-                href='/category'
-                className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
-              >
-                {product.category}
-              </Link>
+        <main className='w-full my-24 md:px-16 px-4'>
+          <div className='flex items-center mb-4'>
+            <Link
+              href='/'
+              className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+            >
+              Home
+            </Link>
+            <GrFormNext />
+            <Link
+              href='/products/page/1'
+              className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+            >
+              Products
+            </Link>
+            <GrFormNext />
+            <Link
+              href='/category'
+              className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+            >
+              Category
+            </Link>
+            <GrFormNext />
+            <Link
+              href='/category'
+              className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
+            >
+              {product.category}
+            </Link>
+          </div>
+          <section className='container max-w-screen-xl mx-auto'>
+            <div>
+              <h1 className='text-lg lg:text-2xl font-bold'>
+                Produk {product.category}
+              </h1>
             </div>
-            <section className='container max-w-screen-xl mx-auto'>
-              <div>
-                <h1 className='text-lg lg:text-2xl font-bold'>
-                  Produk {product.category}
-                </h1>
-              </div>
-              <div className='w-full'>
-                <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
-                  {relatedProducts.slice(0, 3).map((rp, index) => (
-                    <ImageCard key={index} product={rp} />
-                  ))}
-                </ul>
-                <div className='flex gap-6 w-full justify-center pt-4'>
-                  {/* <div class='flex flex-col items-center'>
+            <div className='w-full'>
+              <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
+                {relatedProducts.slice(0, 3).map((rp, index) => (
+                  <ImageCard key={index} product={rp} />
+                ))}
+              </ul>
+              <div className='flex gap-6 w-full justify-center pt-4'>
+                {/* <div class='flex flex-col items-center'>
                     <span class='text-sm md:text-base text-gray-700'>
                       Menampilkan{" "}
                       <span class='font-semibold text-blue-700'>{page} </span>
@@ -150,12 +139,11 @@ const ProductBySlug = ({ product }) => {
                       )}
                     </div>
                   </div> */}
-                </div>
               </div>
-            </section>
-          </main>
-        </Layout>
-      )}
+            </div>
+          </section>
+        </main>
+      </Layout>
     </>
   );
 };

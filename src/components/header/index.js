@@ -77,8 +77,8 @@ const Header = () => {
                   className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link
-                    href='#'
-                    className={`${asPath === "#" ? "text-sky-500" : ""}`}
+                    href='/contact'
+                    className={`${asPath === "/contact" ? "text-sky-500" : ""}`}
                   >
                     Kontak Kami
                   </Link>
