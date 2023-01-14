@@ -62,13 +62,13 @@ const Header = () => {
                   <Link href='/products/page/1'>Produk</Link>
                 </li>
                 <li
-                  className={`${
-                    asPath === "#" ? "text-sky-500" : ""
-                  }group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
+                  className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link
-                    href='#'
-                    className={`${asPath === "#" ? "text-sky-500" : ""}`}
+                    href='/service/page/1'
+                    className={`${
+                      asPath === "service/page/1" ? "text-sky-500" : ""
+                    }`}
                   >
                     Jasa
                   </Link>

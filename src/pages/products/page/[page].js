@@ -2,8 +2,11 @@ import Layout from "../../../layout";
 import ImageCard from "../../../components/product/imageCard";
 import Link from "next/link";
 import productJSON from "../../../data/product/products.json";
-import { GrFormNext, GrNext, GrPrevious } from "react-icons/gr";
+import { GrFormNext, GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
 import Head from "next/head";
+import { useState, useEffect } from "react";
+import SidebarCard from "../../../components/sidebar/sidebarCard";
+import { BsFilterRight } from "react-icons/bs";
 
 const AllProduct = ({ products, page }) => {
   const totalPages = Math.ceil(products.length / 6);
@@ -30,6 +33,8 @@ const AllProduct = ({ products, page }) => {
     );
   };
 
+  const [isCategoryVisible, setIsCategoryVisible] = useState(false);
+
   return (
     <>
       <Layout>
@@ -39,24 +44,39 @@ const AllProduct = ({ products, page }) => {
         </Head>
 
         <main className='w-full my-24 md:px-16 px-4'>
-          <div className='flex items-center mb-4'>
+          <div className='flex items-center mb-4 text-xs md:text-base'>
             <Link
               href='/'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Home
+              Beranda
             </Link>
             <GrFormNext />
             <Link
               href='/products/page/1'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Products
+              Produk
             </Link>
           </div>
           <section className='container max-w-screen-xl mx-auto'>
-            <div>
+            <div className='md:flex md:justify-between'>
               <h1 className='text-2xl font-bold'>Semua Produk</h1>
+              <div className='text-sm'>
+                <button
+                  className='font-semibold flex items-center gap-1 my-2 md:my-0'
+                  onClick={() => {
+                    setIsCategoryVisible(!isCategoryVisible);
+                  }}
+                >
+                  <BsFilterRight size={20} /> Filter Berdasarkan Kategori
+                </button>
+                {isCategoryVisible && (
+                  <div className='absolute z-10 bg-white p-6 rounded-md shadow-xl w-72'>
+                    <SidebarCard products={products} />
+                  </div>
+                )}
+              </div>
             </div>
             <div className='w-full'>
               <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
@@ -82,19 +102,7 @@ const AllProduct = ({ products, page }) => {
                         as={`/products/page/${page - 1}`}
                         class='inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-l hover:bg-blue-500'
                       >
-                        <svg
-                          aria-hidden='true'
-                          class='w-5 h-5 mr-2'
-                          fill='currentColor'
-                          viewBox='0 0 20 20'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            fill-rule='evenodd'
-                            d='M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z'
-                            clip-rule='evenodd'
-                          ></path>
-                        </svg>
+                        <GrFormPreviousLink size={"20px"} />
                         Prev
                       </Link>
                     )}
@@ -105,19 +113,7 @@ const AllProduct = ({ products, page }) => {
                         class='inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-600 border-0 border-l border-gray-700 rounded-r hover:bg-blue-500'
                       >
                         Next
-                        <svg
-                          aria-hidden='true'
-                          class='w-5 h-5 ml-2'
-                          fill='currentColor'
-                          viewBox='0 0 20 20'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            fill-rule='evenodd'
-                            d='M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z'
-                            clip-rule='evenodd'
-                          ></path>
-                        </svg>
+                        <GrFormNextLink size={"20px"} />
                       </Link>
                     )}
                   </div>

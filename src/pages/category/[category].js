@@ -1,16 +1,20 @@
+import Link from "next/link";
+import Head from "next/head";
+import { useState } from "react";
 import productJSON from "../../data/product/products.json";
 import Layout from "../../layout";
 import ImageCard from "../../components/product/imageCard";
-import Head from "next/head";
-import Link from "next/link";
 import { GrFormNext } from "react-icons/gr";
+import SidebarCard from "../../components/sidebar/sidebarCard";
+import { BsFilterRight } from "react-icons/bs";
 
-const ProductBySlug = ({ product }) => {
+const ProductBySlug = ({ product, products }) => {
   const relatedProducts = productJSON.filter(
     (p) => p.category === product.category
   );
 
   const productsSEO = product;
+  const [isCategoryVisible, setIsCategoryVisible] = useState(false);
 
   const MetaSEO = () => {
     return (
@@ -40,26 +44,26 @@ const ProductBySlug = ({ product }) => {
         </Head>
 
         <main className='w-full my-24 md:px-16 px-4'>
-          <div className='flex items-center mb-4'>
+          <div className='flex items-center mb-4 text-xs md:text-base'>
             <Link
               href='/'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Home
+              Beranda
             </Link>
             <GrFormNext />
             <Link
               href='/products/page/1'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Products
+              Produk
             </Link>
             <GrFormNext />
             <Link
               href='/category'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Category
+              Kategori
             </Link>
             <GrFormNext />
             <Link
@@ -70,10 +74,25 @@ const ProductBySlug = ({ product }) => {
             </Link>
           </div>
           <section className='container max-w-screen-xl mx-auto'>
-            <div>
+            <div className='md:flex md:justify-between'>
               <h1 className='text-lg lg:text-2xl font-bold'>
                 Produk {product.category}
               </h1>
+              <div className='text-sm'>
+                <button
+                  className='font-semibold flex gap-1 items-center my-2 md:my-0'
+                  onClick={() => {
+                    setIsCategoryVisible(!isCategoryVisible);
+                  }}
+                >
+                  <BsFilterRight size={20} /> Filter Berdasarkan Kategori
+                </button>
+                {isCategoryVisible && (
+                  <div className='absolute z-10 bg-white p-6 rounded-md shadow-xl w-72'>
+                    <SidebarCard products={products} />
+                  </div>
+                )}
+              </div>
             </div>
             <div className='w-full'>
               <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
@@ -161,6 +180,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       product,
+      products,
     },
   };
 }
