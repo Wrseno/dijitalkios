@@ -7,7 +7,7 @@ const DescriptionCard = () => {
       <div className='md:w-1/2 my-auto relative'>
         <h1 className='font-bold text-5xl lg:text-6xl relative w-1/2'>
           dijital
-          <span className='text-sky-500'>kios</span>
+          <span className='text-blue-500'>kios</span>
           <span className='absolute top-5 right-0 -z-10 animate-spin-slow'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -22,7 +22,7 @@ const DescriptionCard = () => {
           </span>
         </h1>
 
-        <h2 className='font-bold text-3xl md:text-2xl lg:text-4xl my-3 text-slate-800'>
+        <h2 className='font-bold text-xl md:text-2xl lg:text-4xl my-3 text-slate-800'>
           Penyedia Layanan, Jasa, dan Produk Digital
         </h2>
         <p className='text-sm lg:text-base font-medium text-slate-800'>
@@ -30,18 +30,20 @@ const DescriptionCard = () => {
           dulu. Tekan Lihat Produk di bawah.
         </p>
 
-        <span
-          className='hover:bg-transparent border-2 shadow-md 
-            hover:text-sky-500 font-semibold rounded-md p-4 my-4 block w-1/2 lg:w-4/12 text-center
-            bg-sky-500 text-slate-100 hover:duration-300 hover:ease-linear hover:cursor-pointer relative
+        <Link href='/products/page/1'>
+          <span
+            className='hover:bg-transparent border-2 shadow-md 
+            hover:text-blue-500 font-semibold rounded-md p-4 my-4 block w-full md:w-1/2 lg:w-4/12 text-center
+            bg-blue-500 text-slate-100 hover:duration-300 hover:ease-linear hover:cursor-pointer relative
             '
-        >
-          <Link href='/products/page/1'>Lihat Produk</Link>
-          <span className='flex h-4 w-4 absolute bottom-12 right-0'>
-            <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75'></span>
-            <span className='relative inline-flex rounded-full h-4 w-4 bg-sky-500'></span>
+          >
+            Lihat Produk
+            <span className='flex h-4 w-4 absolute bottom-12 right-0'>
+              <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75'></span>
+              <span className='relative inline-flex rounded-full h-4 w-4 bg-blue-500'></span>
+            </span>
           </span>
-        </span>
+        </Link>
       </div>
 
       <div className='md:w-1/2 my-auto'>

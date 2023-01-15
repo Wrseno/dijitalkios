@@ -6,7 +6,6 @@ import ImageCard from "../components/product/imageCard";
 import ExcessCard from "../components/home/excessCard";
 import TestimonialCard from "../components/home/testimonialCard";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 const Home = ({ products, testimonials }) => {
   return (
@@ -33,7 +32,7 @@ const Home = ({ products, testimonials }) => {
               <div className='text-center hover:scale-95 hover:cursor-pointer'>
                 <Link
                   href='/products/page/1'
-                  className='bg-gradient-to-r from-sky-600 to-sky-500 text-slate-50 p-4 px-8 rounded-md shadow-2xl hover:bg-blue-700 duration-300'
+                  className='bg-gradient-to-r from-sky-600 to-sky-500 text-slate-50 text-sm md:text-base md:p-4 p-3 px-8 rounded-md shadow-2xl hover:bg-blue-700 duration-300'
                 >
                   Lihat Semua Produk
                 </Link>

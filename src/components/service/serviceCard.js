@@ -13,7 +13,7 @@ const ServiceCard = ({ service }) => {
           width={1000}
           height={1000}
           placeholder='blur'
-          blurDataURL={`/images${service.images}`}
+          blurDataURL={`${service.images}`}
           className='scale-100 rounded-md'
         />
         <h2 className='text-sm lg:text-xl font-bold pt-2'>{service.title}</h2>

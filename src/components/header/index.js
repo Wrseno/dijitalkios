@@ -42,43 +42,45 @@ const Header = () => {
 
             <nav
               id={menu_class}
-              className='hidden absolute py-5 bg-white dark:bg-opacity-90 bg-opacity-90 font-semibold
-                    shadow-lg rounded-lg w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none'
+              className='hidden absolute py-5 bg-slate-50 font-semibold
+                    shadow-lg rounded-2xl w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none text-center'
             >
               <ul className='block lg:flex items-center gap-6 ml-6 md:ml-0'>
                 <li
-                  className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
+                  className={`group my-2 text-slate-800 hover:text-blue-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link
                     href='/'
-                    className={`${asPath === "/" ? "text-sky-500" : ""}`}
+                    className={`${asPath === "/" ? "text-blue-500" : ""}`}
                   >
                     Beranda
                   </Link>
                 </li>
                 <li
-                  className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
+                  className={`group my-2 text-slate-800 hover:text-blue-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link href='/products/page/1'>Produk</Link>
                 </li>
                 <li
-                  className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
+                  className={`group my-2 text-slate-800 hover:text-blue-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link
                     href='/service/page/1'
                     className={`${
-                      asPath === "service/page/1" ? "text-sky-500" : ""
+                      asPath === "service/page/1" ? "text-blue-500" : ""
                     }`}
                   >
                     Jasa
                   </Link>
                 </li>
                 <li
-                  className={`group text-slate-800 hover:text-sky-500 hover:duration-500 hover:ease-in-out`}
+                  className={`group my-2 text-slate-800 hover:text-blue-500 hover:duration-500 hover:ease-in-out`}
                 >
                   <Link
                     href='/contact'
-                    className={`${asPath === "/contact" ? "text-sky-500" : ""}`}
+                    className={`${
+                      asPath === "/contact" ? "text-blue-500" : ""
+                    }`}
                   >
                     Kontak Kami
                   </Link>

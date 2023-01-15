@@ -11,37 +11,41 @@ const Footer = () => {
       <div className='lg:flex gap-8'>
         <div className='grid text-left md:grid-cols-3 gap-3 mb-14'>
           <div>
-            <h1 className='mb-4 text-xl font-bold mt-10 md:mt-0'>Kategori</h1>
-            <p className='hover:text-blue-600 text-slate-600 duration-300 text-lg my-2'>
+            <h1 className='mb-4 text-lg md:text-xl font-bold mt-10 md:mt-0'>
+              Kategori
+            </h1>
+            <div className='hover:text-blue-600 text-slate-600 duration-300 text-base md:text-lg my-2'>
               <Link href='#'>Website</Link>
-            </p>
-            <p className='hover:text-blue-600 text-slate-600 duration-300 text-lg my-2'>
+            </div>
+            <div className='hover:text-blue-600 text-slate-600 duration-300 text-base md:text-lg my-2'>
               <Link href='#'>Desain Buka Olshop</Link>
-            </p>
-            <p className='hover:text-blue-600 text-slate-600 duration-300 text-lg my-2'>
+            </div>
+            <div className='hover:text-blue-600 text-slate-600 duration-300 text-base md:text-lg my-2'>
               <Link href='#'>Desain Grafis</Link>
-            </p>
+            </div>
           </div>
           <div>
-            <h1 className='mb-4 text-xl font-bold mt-10 md:mt-0'>Pertanyaan</h1>
-            <p className='hover:text-blue-600 text-slate-600 duration-300 text-lg my-2'>
+            <h1 className='mb-4 text-lg md:text-xl font-bold mt-10 md:mt-0'>
+              Pertanyaan
+            </h1>
+            <div className='hover:text-blue-600 text-slate-600 duration-300 text-base md:text-lg my-2'>
               <Link href='#'>FAQ</Link>
-            </p>
+            </div>
           </div>
           <div>
-            <h1 className='mb-4 text-xl font-bold mt-10 md:mt-0'>
+            <h1 className='mb-4 text-lg md:text-xl font-bold mt-10 md:mt-0'>
               Dijitalkios
             </h1>
-            <p className='hover:text-blue-600 text-slate-600 duration-300 text-lg my-2'>
+            <div className='hover:text-blue-600 text-slate-600 duration-300 text-base md:text-lg my-2'>
               <Link href='#'>Syarat dan Ketentuan</Link>
-            </p>
+            </div>
           </div>
         </div>
         <div>
-          <h1 className='text-2xl font-extrabold'>
+          <h1 className='text-xl md:text-2xl font-extrabold'>
             Dapatkan Berbagai Promo Dari dijitalkios
           </h1>
-          <p className='my-2 text-slate-600 text-lg'>
+          <p className='my-2 text-slate-600 text-base md:text-lg'>
             Subscribe untuk mendapatkan promo dan notifikasi dari dijitalkios.
             Dan hal menarik lainnya, secara gratis.
           </p>
@@ -70,7 +74,7 @@ const Footer = () => {
       <div className='text-center border-slate-200 border-t-2 flex justify-between'>
         <div></div>
         <div>
-          <p className=' text-slate-500 mt-8'>
+          <p className='text-sm md:text-base text-slate-500 mt-8'>
             Copyright &copy; {moment().year()} Dijitalkios All Rights Reserved.
           </p>
         </div>

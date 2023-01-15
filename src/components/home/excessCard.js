@@ -22,8 +22,10 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Tim Support Handal</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>
+              Tim Support Handal
+            </h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Kami selalu siap membantu setiap kendala yang dialami customer
               melalui email maupun chat.
             </p>
@@ -34,8 +36,10 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Harga Terjangkau</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>
+              Harga Terjangkau
+            </h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Anda bisa mendapatkan layanan dan jasa dengan harga yang
               terjangkau mulai dari harga Rp 5.000 an saja.
             </p>
@@ -46,8 +50,10 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Layanan Lengkap</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>
+              Layanan Lengkap
+            </h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Kami menyediakan banyak layanan yang bisa Anda dapatkan. Contohnya
               seperti jasa website, desain grafis, desain bukaolshop, dll.
             </p>
@@ -58,8 +64,8 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Terpercaya</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>Terpercaya</h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Kami telah dipercaya oleh banyak konsumen. Untuk membantu dan
               membuat bisnis mereka lebih berkembang.
             </p>
@@ -70,8 +76,10 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Garansi Kerusakan</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>
+              Garansi Kerusakan
+            </h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Jika layanan yang kami sediakan terdapat kerusakan, akan kami
               perbaiki secara GRATIS.
             </p>
@@ -82,8 +90,10 @@ const ExcessCard = () => {
               color={"#f0f9ff"}
               className='mx-auto bg-sky-500 p-2 rounded-full'
             />
-            <h2 className='text-xl font-bold py-1'>Pembaruan Layanan</h2>
-            <p className='text-slate-600'>
+            <h2 className='text-lg md:text-xl font-bold py-1'>
+              Pembaruan Layanan
+            </h2>
+            <p className='text-slate-600 text-sm md:text-base'>
               Kami selalu memperbarui layanan yang telah kami sediakan, sehingga
               akan memberikan pengalaman yang lebih baik.
             </p>

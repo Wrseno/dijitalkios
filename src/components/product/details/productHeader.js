@@ -6,7 +6,7 @@ import { GrFormNext } from "react-icons/gr";
 const ProductHeader = ({ product }) => {
   return (
     <section className='container max-w-screen-xl mx-auto mt-24'>
-      <div className='flex items-center mb-4'>
+      <div className='flex items-center text-sm md:text-base mb-4'>
         <Link
           href='/'
           className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
@@ -35,8 +35,10 @@ const ProductHeader = ({ product }) => {
           className='rounded-md'
         />
         <div>
-          <h1 className='text-2xl font-extrabold'>{product.title}</h1>
-          <p className='text-3xl font-extrabold text-blue-500  py-2'>
+          <h1 className='text-xl md:text-2xl font-extrabold'>
+            {product.title}
+          </h1>
+          <p className='text-2xl md:text-3xl font-extrabold text-blue-500  py-2'>
             {product.price}
           </p>
           <div className='py-3 border-slate-200 border-b-2 flex gap-1'>

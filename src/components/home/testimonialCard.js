@@ -20,7 +20,7 @@ const TestimonialCard = ({ testi }) => {
             blurDataURL={`/images/${testi.images}`}
           />
           <div>
-            <h2 className='font-bold text-xl'>{testi.name}</h2>
+            <h2 className='font-bold text-lg md:text-xl'>{testi.name}</h2>
             <p className='text-sm text-slate-700'>{testi.proffesion}</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const TestimonialCard = ({ testi }) => {
         </div>
       </div>
       <div className='mt-4'>
-        <p className='text-slate-900'>{testi.comment}</p>
+        <p className='text-slate-900 text-sm md:text-base'>{testi.comment}</p>
       </div>
     </li>
   );

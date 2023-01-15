@@ -13,7 +13,7 @@ const ImageCard = ({ product }) => {
           width={1000}
           height={1000}
           placeholder='blur'
-          blurDataURL={`/images${product.images}`}
+          blurDataURL={`${product.images}`}
           className='scale-100 rounded-md'
         />
         <h2 className='text-sm lg:text-xl font-bold pt-2'>{product.title}</h2>

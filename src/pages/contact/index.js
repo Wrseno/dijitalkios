@@ -4,12 +4,12 @@ import Layout from "../../layout";
 const Contact = () => {
   return (
     <Layout>
-      <section className='bg-slate-100 my-32'>
+      <section className='bg-slate-50 my-32'>
         <div className='px-4 mx-auto max-w-screen-md'>
-          <h2 className='mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 '>
+          <h2 className='mb-4 text-2xl md:text-4xl tracking-tight font-extrabold text-center text-gray-900 '>
             Kontak Kami
           </h2>
-          <p className='mb-8 lg:mb-16 font-light text-center text-gray-500  sm:text-xl'>
+          <p className='mb-8 lg:mb-16 font-light text-center text-gray-500 md:text-xl'>
             Punya Masalah Teknis? Butuh Bantuan? Silahkan Hubungi Kami.
           </p>
           <form action='#' className='space-y-8'>
