@@ -14,7 +14,7 @@ const Service = ({ services, page }) => {
   return (
     <Layout>
       <main className='w-full my-24 md:px-16 px-4'>
-        <div className='flex items-center mb-4 text-xs md:text-base'>
+        <div className='flex items-center mb-4 text-sm md:text-base'>
           <Link
             href='/'
             className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
@@ -42,7 +42,7 @@ const Service = ({ services, page }) => {
                 <BsFilterRight size={20} /> Filter Berdasarkan Kategori
               </button>
               {isCategoryVisible && (
-                <div className='absolute z-10 bg-white p-6 rounded-md shadow-xl w-72'>
+                <div className='absolute z-10 bg-white p-6 rounded-md shadow-xl w-64'>
                   <SidebarServiceCard services={services} />
                 </div>
               )}

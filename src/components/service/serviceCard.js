@@ -5,7 +5,7 @@ import { AiFillStar } from "react-icons/ai";
 const ServiceCard = ({ service }) => {
   return (
     <li className='mx-auto bg-white shadow-xl p-3 rounded-md hover:text-blue-700 duration-300 hover:ease-in hover:-translate-y-1 md:hover:-translate-y-2'>
-      <Link href={`/services/${service.slug}`}>
+      <Link href={`/service/${service.slug}`}>
         <Image
           unoptimized
           src={`/images/${service.images}`}

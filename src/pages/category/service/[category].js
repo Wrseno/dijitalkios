@@ -1,36 +1,36 @@
 import Link from "next/link";
 import Head from "next/head";
 import { useState } from "react";
-import productJSON from "../../data/product/products.json";
-import Layout from "../../layout";
-import ImageCard from "../../components/product/imageCard";
+import serviceJSON from "../../../data/service/services.json";
+import Layout from "../../../layout";
 import { GrFormNext } from "react-icons/gr";
-import SidebarCard from "../../components/sidebar/sidebarCard";
 import { BsFilterRight } from "react-icons/bs";
+import SidebarServiceCard from "../../../components/sidebar/sidebarService";
+import ServiceCard from "../../../components/service/serviceCard";
 
-const ProductBySlug = ({ product, products }) => {
-  const relatedProducts = productJSON.filter(
-    (p) => p.category === product.category
+const ServiceBySlug = ({ service, services }) => {
+  const relatedServices = serviceJSON.filter(
+    (s) => s.category === service.category
   );
 
-  const productsSEO = product;
+  const servicesSEO = service;
   const [isCategoryVisible, setIsCategoryVisible] = useState(false);
 
   const MetaSEO = () => {
     return (
       <>
-        <meta name='description' content={productsSEO.description} />
+        <meta name='description' content={servicesSEO.description} />
         <meta
           name='keywords'
-          content={`${productsSEO.category}, ${productsSEO.category}, Jasa Pembuatan Website, HTML bukaolshop Gratis, Jual Script bukaolshop, jual html bo`}
+          content={`${servicesSEO.category}, ${servicesSEO.category}, Jasa Pembuatan Website, HTML bukaolshop Gratis, Jual Script bukaolshop, jual html bo`}
         />
-        <meta property='og:description' content={productsSEO.description} />
-        <meta name='twitter:title' content={productsSEO.title} />
+        <meta property='og:description' content={servicesSEO.description} />
+        <meta name='twitter:title' content={servicesSEO.title} />
         <meta name='twitter:image' content='https://ibb.co/LQ9vpVh' />
         <meta name='twitter:image:alt' content='Script Web Topup Games'></meta>
-        <meta name='twitter:description' content={productsSEO.description} />
-        <meta name='og:title' content={productsSEO.title} />
-        <meta property='og:description' content={productsSEO.description} />
+        <meta name='twitter:description' content={servicesSEO.description} />
+        <meta name='og:title' content={servicesSEO.title} />
+        <meta property='og:description' content={servicesSEO.description} />
       </>
     );
   };
@@ -39,7 +39,7 @@ const ProductBySlug = ({ product, products }) => {
     <>
       <Layout>
         <Head>
-          <title>Produk {product.category} || Dijital Kios</title>
+          <title>Jasa {service.category} || Dijital Kios</title>
           {MetaSEO()}
         </Head>
 
@@ -56,7 +56,7 @@ const ProductBySlug = ({ product, products }) => {
               href='/products/page/1'
               className='text-blue-600 hover:text-blue-800 duration-300 font-semibold'
             >
-              Produk
+              Jasa
             </Link>
             <GrFormNext />
             <Link
@@ -70,13 +70,13 @@ const ProductBySlug = ({ product, products }) => {
               href='/category'
               className='text-xs md:text-base text-slate-500 duration-300 font-semibold'
             >
-              {product.category}
+              {service.category}
             </Link>
           </div>
           <section className='container max-w-screen-xl mx-auto'>
             <div className='md:flex md:justify-between'>
               <h1 className='text-lg lg:text-2xl font-bold'>
-                Produk {product.category}
+                Jasa {service.category}
               </h1>
               <div className='text-sm'>
                 <button
@@ -89,15 +89,15 @@ const ProductBySlug = ({ product, products }) => {
                 </button>
                 {isCategoryVisible && (
                   <div className='absolute z-10 bg-white p-6 rounded-md shadow-xl w-64'>
-                    <SidebarCard products={products} />
+                    <SidebarServiceCard services={services} />
                   </div>
                 )}
               </div>
             </div>
             <div className='w-full'>
               <ul className='grid grid-cols-2 lg:grid-cols-3 gap-4 my-4'>
-                {relatedProducts.slice(0, 3).map((rp, index) => (
-                  <ImageCard key={index} product={rp} />
+                {relatedServices.slice(0, 3).map((rp, index) => (
+                  <ServiceCard key={index} service={rp} />
                 ))}
               </ul>
               <div className='flex gap-6 w-full justify-center pt-4'>
@@ -167,30 +167,30 @@ const ProductBySlug = ({ product, products }) => {
   );
 };
 
-export default ProductBySlug;
+export default ServiceBySlug;
 
-function findProductByCategory(products, category) {
-  return products.find((product) => product.category === category);
+function findServiceByCategory(services, category) {
+  return services.find((service) => service.category === category);
 }
 
 export async function getStaticProps({ params }) {
-  const products = productJSON;
-  const product = findProductByCategory(products, params.category);
+  const services = serviceJSON;
+  const service = findServiceByCategory(services, params.category);
 
   return {
     props: {
-      product,
-      products,
+      service,
+      services,
     },
   };
 }
 
 export async function getStaticPaths() {
-  const products = productJSON;
+  const services = serviceJSON;
 
   return {
-    paths: products.map((product) => ({
-      params: { category: product.category },
+    paths: services.map((service) => ({
+      params: { category: service.category },
     })),
     fallback: false,
   };

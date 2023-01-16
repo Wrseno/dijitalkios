@@ -1,6 +1,5 @@
 import moment from "moment/moment";
 import Link from "next/link";
-import Logo from "../logo";
 
 const Footer = () => {
   return (
@@ -75,7 +74,8 @@ const Footer = () => {
         <div></div>
         <div>
           <p className='text-sm md:text-base text-slate-500 mt-8'>
-            Copyright &copy; {moment().year()} Dijitalkios All Rights Reserved.
+            Copyright &copy; 2022 - {moment().year()} Dijitalkios All Rights
+            Reserved.
           </p>
         </div>
       </div>

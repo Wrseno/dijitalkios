@@ -1,72 +1,31 @@
 [
   {
+    "id": "1",
+    "images": "z-games.webp",
     "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
     "category": "Landing Page",
     "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Desain",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
-  },
-  {
-    "title": "Jasa Pembuatan Landing Page",
-    "images": "y-games.jpg",
-    "category": "Landing Page",
-    "price": "Rp 50.000 - Rp 200.000",
-    "slug": "jasa-landing-page"
+    "update": "25 Des, 2022",
+    "description": "Web Topup Z Games ini adalah Platform penyedia produk digital PPOB, Voucher dan Games. Website ini memiliki keunggulan yaitu ketika pembeli mengisi formulir top up, maka akan otomatis diarahkan ke WhatsApp dengan keterangan Id Games, Nominal Top Up, dan Metode Pembayaran.",
+    "feature": [
+      "Optimasi SEO",
+      "Custom warna, font, dll.",
+      "Custom metode pembayaran, harga.",
+      "Termasuk Hosting",
+      "Termasuk Domain (.my.id)",
+      "Dibantu Proses Install",
+      "Terintegrasi API WhatsApp"
+    ],
+    "details": [
+      {
+        "author": "Dijitalkios",
+        "category": "Landing Page",
+        "tech": "HTML, CSS, Javascript",
+        "release": "25 Des, 2022",
+        "update": "25 Des, 2022"
+      }
+    ],
+    "slug": "jasa-landing-page",
+    "preview": "#"
   }
 ]
