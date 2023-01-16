@@ -6,7 +6,7 @@
     "value": "DANA : 081316284051"
   },
   {
-    "id": "pay_4",
+    "id": "pay_2",
     "name": "ShopeePay",
     "images": "shopee.webp",
     "value": "ShopeePay : 082132873886"
@@ -15,7 +15,7 @@
     "id": "pay_3",
     "name": "GOPAY",
     "images": "gopay.webp",
-    "value": "GOPAY : Belum Bisa"
+    "value": "GOPAY : 081316284051"
   },
   {
     "id": "pay_4",
